@@ -1,7 +1,3 @@
 {
-    "packages": {
-      "php": {
-        "extensions": ["gd"]
-      }
-    }
+    "phpExtensions": ["gd"]
   }
