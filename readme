@@ -1,0 +1,113 @@
+# Inventory Management System
+
+## 📌 Overview
+
+Inventory Management System is a web-based application built using Laravel.
+This project was developed to manage inventory data efficiently, including item tracking, stock management, and user authentication.
+
+---
+
+## 🎯 Key Features
+
+* User Authentication (Login, Register, Email Verification)
+* Forgot & Reset Password System
+* Dashboard Overview
+* Inventory Management (CRUD Operations)
+* Secure Password Handling & Token-based Reset
+
+---
+
+## 🛠️ Tech Stack
+
+* Backend: Laravel 12 (PHP 8.2)
+* Frontend: Blade, Tailwind CSS
+* Database: MySQL
+* Authentication: Laravel Breeze
+
+---
+
+## 💼 Skills Demonstrated
+
+This project demonstrates the following skills:
+
+### 1. Application Development
+
+* Built a full-stack web application using Laravel MVC architecture
+* Implemented routing, controllers, and Blade templating
+
+### 2. Problem Solving & Debugging
+
+* Handled SMTP email issues during password reset feature
+* Implemented alternative logging method for testing
+
+### 3. Database Management
+
+* Designed and managed relational database using MySQL
+* Used migrations and Eloquent ORM
+
+### 4. Authentication System
+
+* Implemented:
+
+  * Login & Registration
+  * Email Verification
+  * Forgot Password with token system
+  * Password confirmation
+
+### 5. Code Implementation
+
+* Developed clean and structured code
+* Tested features such as authentication and CRUD operations
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone [your-repo-link]
+cd inventory-system
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+```
+
+---
+
+## ▶️ Run Application
+
+```bash
+php artisan serve
+npm run dev
+```
+
+Access:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## ⚠️ Notes
+
+For local testing (email feature):
+
+```env
+MAIL_MAILER=log
+```
+
+Reset password link can be found in:
+
+```
+storage/logs/laravel.log
+```
+
+---
+
+## 📌 Conclusion
+
+This project reflects my ability to develop and maintain web applications, analyze system requirements, and implement secure authentication systems using modern web technologies.
+
+---
