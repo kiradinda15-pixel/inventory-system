@@ -28,8 +28,8 @@ class ItemController extends Controller
      */
     public function create()
     {
-        $suppliers = Supplier::all();
-        return view('items.create', compact('suppliers'));
+        $suppliers = Supplier::all();  // Ambil semua supplier
+        return view('items.create', compact('suppliers'));  // Kirim data ke view
     }
 
     /**

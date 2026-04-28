@@ -60,10 +60,7 @@
 
                     <div>
                         <label class="block mb-2 text-sm font-semibold text-white/90">Supplier</label>
-                        <select
-                            name="supplier_id"
-                            class="w-full rounded-2xl border border-white/15 bg-[#241034] px-4 py-3 text-white outline-none focus:border-pink-400 focus:ring-2 focus:ring-pink-400/30"
-                        >
+                        <select name="supplier_id">
                             <option value="">Pilih supplier</option>
                             @foreach($suppliers as $supplier)
                                 <option value="{{ $supplier->id }}" {{ old('supplier_id') == $supplier->id ? 'selected' : '' }}>
