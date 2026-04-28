@@ -12,7 +12,7 @@ class DashboardController extends Controller
     public function index()
     {
         $monthlyData = Transaction::select(
-            DB::raw('MONTH(date) as month'),
+            DB::raw("strftime('%m', date) as month"),
             DB::raw("SUM(CASE WHEN LOWER(type) = 'in' THEN quantity ELSE 0 END) as total_in"),
             DB::raw("SUM(CASE WHEN LOWER(type) = 'out' THEN quantity ELSE 0 END) as total_out")
         )
